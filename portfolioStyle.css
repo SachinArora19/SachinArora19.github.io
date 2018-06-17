@@ -1,0 +1,214 @@
+footer {
+	background-color: #333;
+	color: #ddd;
+	margin: 1%;
+	text-align: center;  
+  /*background: linear-gradient(to right,  #6495ed 0%,lightblue 40%,white 60%,white 100%);*/
+}
+
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.parallaxEffect {
+    background-image: url("images/clgGrpPics.jpg");
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity:.9;
+    -webkit-filter: grayscale(70%);
+    filter: grayscale(70%);
+    
+}
+
+.overlayClass {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.txtOuter {
+	text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+.cdDiv2Content{
+	box-shadow: 6px 6px 8px #777;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+.firstDivImg{
+  width: 40%;
+  height: 40%;
+  margin-top: 10%
+}
+
+@media screen and (max-width: 799px)
+{
+  #aboutMe{
+    order: 2;
+    font-size: 1em;
+    width: 70vw;
+    margin: 2vw;
+  }
+  #myAvatar{
+    order: 1;
+    margin:2vh 2vw 2vh 2vw;
+  }
+  #myAvatar img{
+     height: 55vh;
+     width: 70vw;
+  }
+  
+  #aboutMeContainer{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 800px)
+{
+  #aboutMe{
+    order: 1;
+    font-size: 1em;
+    width: 40vw;
+    margin: 2vh 2vw 2vh 12vw;
+  }
+  #myAvatar{
+    order: 2;
+    margin:2vh 2vw 2vh 2vw;
+  }
+  #myAvatar img{
+     height: 25vh;
+     width: 25vw;
+  }
+}
+/*Technical interest CSS*/
+* {
+    box-sizing: border-box;
+}
+.technicalBody {
+    background-color: #f1f1f1;
+    font-family: Arial;
+    text-align: center;
+    margin:2%; 
+    margin-left: 10%;
+}
+.main {
+    margin: auto;
+}
+.tilerow,
+.tilerow > .tilecolumn {
+    padding: 1vh 1vw 1vh 1vw;
+}
+.tilecolumn {
+    width: 25%;
+    float: left;
+}
+.tilerow:after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.tilecontent {
+    background-color: white;
+    padding: 1vh 1vw 1vh 1vw;
+}
+.tilecontent img{
+ height:15vh;
+}
+.tilecontent h3{
+ height:10vh;
+}
+.tilecontent p {
+ height:25vh;
+}
+
+@media screen and (max-width: 1300px) {
+    .tilecolumn {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    .tilecolumn {
+        width: 100%;
+    }
+}
+
+/*project*/
+.tilerowProject,
+.tilerowProject > .tilecolumnProject {
+    padding: 1vh 1vw 1vh 1vw;
+}
+.tilecolumnProject {
+    width: 100%;
+}
+.tilerowProject:after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.tilecontentProject {
+    background-color: white;
+    padding: 1vh 1vw 1vh 1vw;
+    display: flex;
+}
+.tilecontentProject img{
+ height:15vh;
+ width: 10vw;
+}
+.tilecontentProject h3{
+ height:10vh;
+}
+.tilecontentProject p {
+ height:10vh;
+}
+
+@media screen and (max-width: 1300px) {
+  .tilecontentProject {
+    flex-direction: column;
+    height: 65vh;
+
+  }
+  .tilecontentProject h3{
+ height:15vh;
+}
+.tilecontentProject p {
+ height:15vh;
+}
+}
+
+@media screen and (max-width: 800px) {
+  .tilecontentProject {
+    flex-direction: column;
+    height: 75vh;
+
+  }
+  .tilecontentProject h3{
+ height:25vh;
+}
+.tilecontentProject p {
+ height:25vh;
+}
+}
+@media screen and (max-width: 500px) {
+  .tilecontentProject {
+    flex-direction: column;
+    height: 90vh;
+
+  }
+  .tilecontentProject h3{
+ height:35vh;
+}
+.tilecontentProject p {
+ height:35vh;
+}
+}
